@@ -2,7 +2,7 @@
 const isWails = !!(window as any).go;
 
 export const apiClient = {
-  // Para enviar datos (Login, Crear Paciente)
+  // Para enviar datos (Login, Crear Paciente, entre otros)
   post: async (endpoint: string, data: any) => {
     const token = localStorage.getItem("token");
 
@@ -28,7 +28,7 @@ export const apiClient = {
     }
   },
 
-  // Para pedir datos (Listar Pacientes)
+  // Para pedir datos (Listar Pacientes, entre otros)
   get: async (endpoint: string) => {
     const token = localStorage.getItem("token");
     if (isWails) {

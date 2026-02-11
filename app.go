@@ -91,11 +91,3 @@ func (a *App) GenericRequest(method string, endpoint string, body interface{}, t
 
 	return &result, nil
 }
-
-type Paciente struct {
-	ID        uint   `json:"id"`
-	Nombre    string `json:"nombre"`
-	Apellido  string `json:"apellido"`
-	Cedula    string `json:"cedula"`
-	Resultado string `json:"resultado"`
-}

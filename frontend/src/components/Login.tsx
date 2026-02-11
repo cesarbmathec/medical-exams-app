@@ -110,7 +110,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
             <button
               type="submit"
               disabled={isLoading}
-              className={`w-full py-4 px-4 rounded-xl font-bold text-white shadow-lg transition-all 
+              className={`w-full py-4 px-4 rounded-xl font-bold text-white shadow-lg transition-all cursor-pointer
                 ${
                   isLoading
                     ? "bg-gray-400 cursor-not-allowed"
